@@ -71,7 +71,7 @@ if [[ "${OVERRIDE_BENCHMARK_VERSION}" != "" ]]; then
       --scored \
       --nosummary \
       --noremediations \
-      --v=5 \
+      --v=0 \
       --config-dir="${CONFIG_DIR}" \
       --benchmark "${OVERRIDE_BENCHMARK_VERSION}" \
       --json \
@@ -86,7 +86,7 @@ else
       --scored \
       --nosummary \
       --noremediations \
-      --v=5 \
+      --v=0 \
       --config-dir "${CONFIG_DIR}" \
       --version "${RANCHER_K8S_VERSION}" \
       --json \
@@ -109,7 +109,7 @@ if [[ "${OVERRIDE_BENCHMARK_VERSION}" != "" ]]; then
       --scored \
       --nosummary \
       --noremediations \
-      --v=5 \
+      --v=0 \
       --config-dir="${CONFIG_DIR}" \
       --benchmark "${OVERRIDE_BENCHMARK_VERSION}" \
       --json \
@@ -124,7 +124,7 @@ else
       --scored \
       --nosummary \
       --noremediations \
-      --v=5 \
+      --v=0 \
       --config-dir="${CONFIG_DIR}" \
       --version "${RANCHER_K8S_VERSION}" \
       --json \
@@ -146,7 +146,7 @@ if [[ "${OVERRIDE_BENCHMARK_VERSION}" != "" ]]; then
       --scored \
       --nosummary \
       --noremediations \
-      --v=5 \
+      --v=0 \
       --config-dir="${CONFIG_DIR}" \
       --benchmark "${OVERRIDE_BENCHMARK_VERSION}" \
       --json \
@@ -161,7 +161,7 @@ else
       --scored \
       --nosummary \
       --noremediations \
-      --v=5 \
+      --v=0 \
       --config-dir="${CONFIG_DIR}" \
       --version "${RANCHER_K8S_VERSION}" \
       --json \
@@ -186,7 +186,7 @@ if [[ "${OVERRIDE_BENCHMARK_VERSION}" != "" ]]; then
           --scored \
           --nosummary \
           --noremediations \
-          --v=5 \
+          --v=0 \
           --config-dir="${CONFIG_DIR}" \
           --benchmark "${OVERRIDE_BENCHMARK_VERSION}" \
           --json \
