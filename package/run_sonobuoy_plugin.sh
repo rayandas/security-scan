@@ -71,12 +71,12 @@ if [[ "${OVERRIDE_BENCHMARK_VERSION}" != "" ]]; then
       --scored \
       --nosummary \
       --noremediations \
-      --v=0 \
+      --v=3 \
       --config-dir="${CONFIG_DIR}" \
       --benchmark "${OVERRIDE_BENCHMARK_VERSION}" \
       --json \
       --log_dir "${LOG_DIR}" \
-      --outputfile "${RESULTS_DIR}/etcd.json" 2> "${ERROR_LOG_FILE}"
+      --outputfile "${RESULTS_DIR}/etcd.json"
   fi
 else
   if [[ "$(ps -e | grep etcd | wc -l)" -gt 0 ]]; then
@@ -86,12 +86,12 @@ else
       --scored \
       --nosummary \
       --noremediations \
-      --v=0 \
+      --v=3 \
       --config-dir "${CONFIG_DIR}" \
       --version "${RANCHER_K8S_VERSION}" \
       --json \
       --log_dir "${LOG_DIR}" \
-      --outputfile "${RESULTS_DIR}/etcd.json" 2> "${ERROR_LOG_FILE}"
+      --outputfile "${RESULTS_DIR}/etcd.json"
   fi
 fi
 
